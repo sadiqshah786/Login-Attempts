@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.form_wrapper {
+    position: absolute;
+    width: 30%;
+    /* margin: 0 auto; */
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+}
+form {
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 26px 24px 34px;
+    font-weight: 400;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 4%);
+}
+input{
+    font-size: 24px;
+    line-height: 1.33333333;
+    width: 100%;
+    border-width: 0.0625rem !important;
+    padding: 0.1875rem 0.3125rem !important;
+    margin: 0 6px 16px 0;
+    min-height: 40px;
+    max-height: none;
+}
+
+input:focus,.btn:focus{
+    box-shadow: none !important;
+}
+.btn_wrapper.text-left {
+    text-align: right;
+}
+.btn{
+    background-color: #00cfff;
+    color: #fff;
+    width: 20%;
+    border-radius: 4px;
+}
+.btn:hover{
+    background-color: #0090cd;
+    color: #fff;
+}
+.login {
+    text-align: center;
+}
+.timer{
+    display: none;
+}
+.timer {
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
+    padding: 20px;
+    background: #f0f3f4;
+}
+.errosMessage p {
+    border-left: 4px solid #f50f13;
+    padding: 12px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+    word-wrap: break-word;
+    display: none;
+}
+label {
+    display: inline-block;
+    font-size: 18px !important;
+    font-weight: 500;
+}
+
+@media screen and (max-width:600px) {
+    .form_wrapper {
+        position: absolute;
+        width: 90%;
+    }
+    button.btn {
+        width: 100%;
+    }
+}
